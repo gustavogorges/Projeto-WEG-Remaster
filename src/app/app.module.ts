@@ -9,7 +9,6 @@ import { TelaLoginComponent } from './core/pages/tela-login/tela-login.component
 import { TelaPerfilComponent } from './core/pages/tela-perfil/tela-perfil.component';
 import { TelaProjetosComponent } from './core/pages/tela-projetos/tela-projetos.component';
 import { TelaTarefasComponent } from './core/pages/tela-tarefas/tela-tarefas.component';
-import { TelaHomeComponent } from './core/pages/tela-home/tela-home.component';
 import { CarComponent } from './core/pages/components/car/car.component';
 import { NavComponent } from './core/pages/components/nav/nav.component';
 import { SidebarComponent } from './core/pages/components/sidebar/sidebar.component';
@@ -23,7 +22,6 @@ import { ModealEquipesComponent } from './core/pages/components/modeal-equipes/m
     TelaPerfilComponent,
     TelaProjetosComponent,
     TelaTarefasComponent,
-    TelaHomeComponent,
     CarComponent,
     NavComponent,
     SidebarComponent,
