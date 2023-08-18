@@ -18,30 +18,20 @@ export class NavComponent {
     }
   }
 
-  largura: number = 0
+  largura: number = 0 
 
 
   sideBar() {
     if (this.largura == 0) {
-      if(this.screenWidth >= 1024){
+      if(this.screenWidth >= 768){
         this.largura = 16
       }
       else{
-        this.largura = 70
+        this.largura = 50
       }
     } else {
       this.largura = 0
     }
-  }
-
-  hovered: boolean = false
-
-  onMouseOver() {
-    this.hovered = true;
-  }
-
-  onMouseOut() {
-    this.hovered = false;
   }
 
 
@@ -50,11 +40,12 @@ export class NavComponent {
  
 
   ngOnInit() {
+    this.getScreenSize()
   }
 
   @HostListener('window:resize', ['$event'])
   getScreenSize() {
+    this.largura = 0
     this.screenWidth = window.innerWidth;
-    this.sideBar()
   }
 }
