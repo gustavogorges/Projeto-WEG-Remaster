@@ -13,6 +13,7 @@ import { CarComponent } from './core/pages/components/car/car.component';
 import { NavComponent } from './core/pages/components/nav/nav.component';
 import { SidebarComponent } from './core/pages/components/sidebar/sidebar.component';
 import { ModealEquipesComponent } from './core/pages/components/modeal-equipes/modeal-equipes.component';
+import {CheckboxModule} from 'primeng/checkbox';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ModealEquipesComponent } from './core/pages/components/modeal-equipes/m
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonModule
+    ButtonModule,
+    CheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
