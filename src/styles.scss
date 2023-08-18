@@ -5,7 +5,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.content-shifted {
-    transform: translateX(74%);
-  }
+.p-button-label {
+    font-size: larger;
+}

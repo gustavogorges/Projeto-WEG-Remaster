@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'corNav' : '#E9EDF1'
+        'corNav' : '#E9EDF1',
+        'corVerde' : '#4C956C'
       }
     },
   },
