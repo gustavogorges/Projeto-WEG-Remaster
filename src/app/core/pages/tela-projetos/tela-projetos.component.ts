@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./tela-projetos.component.scss']
 })
 export class TelaProjetosComponent {
+  isSidebarOpen: boolean = false;
 
+  constructor() {
+  }
 }
