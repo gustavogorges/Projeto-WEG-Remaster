@@ -11,7 +11,6 @@ import { TelaProjetosComponent } from './core/pages/tela-projetos/tela-projetos.
 import { TelaTarefasComponent } from './core/pages/tela-tarefas/tela-tarefas.component';
 import { CarComponent } from './core/pages/components/car/car.component';
 import { NavComponent } from './core/pages/components/nav/nav.component';
-import { SidebarComponent } from './core/pages/components/sidebar/sidebar.component';
 import { ModealEquipesComponent } from './core/pages/components/modeal-equipes/modeal-equipes.component';
 import {CheckboxModule} from 'primeng/checkbox';
 
@@ -25,7 +24,6 @@ import {CheckboxModule} from 'primeng/checkbox';
     TelaTarefasComponent,
     CarComponent,
     NavComponent,
-    SidebarComponent,
     ModealEquipesComponent
   ],
   imports: [

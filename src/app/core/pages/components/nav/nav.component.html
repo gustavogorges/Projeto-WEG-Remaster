@@ -1,8 +1,13 @@
+<div [ngStyle]="{'width': largura + '%'}" style="z-index: 1000; border-right: 6px solid #E9EDF1;"  class=" bg-[#185E77]  h-screen fixed duration-300">
+      <div class="w-[20%] absolute top-5 right-5 " (click)="sideBar()">
+        <img src="https://icon-library.com/images/x-icon-white/x-icon-white-0.jpg" alt="">
+      </div>
+</div>
 
-<div class="w-full h-20 bg-corNav flex justify-center drop-shadow-md">
+<div class="w-full h-20 bg-corNav flex justify-center  drop-shadow-md z-0">
     <div class="w-4/5 h-20 bg-corNav grid grid-cols-5 ">
       <div class="flex items-center justify-start px-5 text-sky-900">
-        <i class="pi pi-list" style="font-size: 2.2rem;"></i>
+        <i class="pi pi-list cursor-pointer" style="font-size: 2.2rem; z-index: 1001; position: fixed;" (click)="sideBar()" ></i>
       </div>
       <div
         class="flex items-center justify-start px-5 col-start-3 col-end-5 h-full"
@@ -27,4 +32,3 @@
       </div>
     </div>
   </div>
-
