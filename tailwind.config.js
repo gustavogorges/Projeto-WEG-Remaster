@@ -6,7 +6,8 @@ module.exports = {
     extend: {
       colors: {
         'corNav' : '#E9EDF1',
-        'corVerde' : '#4C956C'
+        'corVerde' : '#4C956C',
+        'corAzul' : '#185E77'
       }
     },
   },
