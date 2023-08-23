@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./tela-tarefas.component.scss']
 })
 export class TelaTarefasComponent {
+  isSidebarOpen: boolean = false;
 
+  constructor() {
+  }
 }

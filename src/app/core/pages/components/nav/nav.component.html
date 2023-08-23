@@ -1,7 +1,15 @@
 <div [ngStyle]="{'width': largura + '%'}" style="z-index: 1001; border-right: 6px solid #E9EDF1;"
   class=" bg-[#185E77]  h-screen fixed duration-300">
   <div class="w-[20%] absolute top-5 right-5 " (click)="sideBar()">
-    <img src="https://icon-library.com/images/x-icon-white/x-icon-white-0.jpg" alt="">
+    <i class="pi pi-list cursor-pointer"
+    
+    
+    
+    
+    
+    
+    
+    [ngClass]="largura ? 'visible' : 'invisible'" style="font-size: 2.2rem; position: fixed;" (click)="sideBar()"></i>
   </div>
 </div>
 
@@ -11,7 +19,7 @@
       <i class="pi pi-list cursor-pointer" style="font-size: 2.2rem; position: fixed;" (click)="sideBar()">
       </i>
     </div>
-    <div class="invisible lg:visible flex items-center justify-start px-5 col-start-3 col-end-5 h-full">
+    <div class="invisible lg:visible flex items-center justify-start col-start-3 col-end-5 h-full">
       <span class="p-input-icon-right w-3/4 h-2/3">
         <i class="pi pi-search" style="color: #185E77;"></i>
         <input type="text" class="w-full h-full px-4 rounded-lg border-2 border-sky-800" pInputText />

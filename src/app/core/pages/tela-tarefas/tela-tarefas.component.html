@@ -1,1 +1,65 @@
-<p>tela-tarefas works!</p>
+<div>
+  <div [ngStyle]="{'content-shifted': isSidebarOpen}"
+    class=" pt-16 transition-transform duration-300 w-full h-full bg-white flex flex-col items-center">
+    <div class="flex justify-center pt-10 mb-[2.3%] h-2/6 w-full">
+      <div class="w-3/4">
+        <p class="text-3xl lg:text-5xl text-sky-900 font-bold pb-4 drop-shadow-xl">
+          Projeto Padrão
+        </p>
+        <div class="mt-10 lg:flex justify-between">
+          <button pButton type="button" icon="pi pi-plus" iconPos="left"
+            class="text-sm lg:w-1/3 h-14 lg:text-xl max-w-xs" label="Adicionar Tarefa"></button>
+          <div>
+            <p-button label="Ordenação" styleClass="p-button-text" iconPos="right" icon="pi pi-sort-alt"></p-button>
+            <p-button label="Visualização" styleClass="p-button-text" iconPos="right" icon="pi pi-eye"></p-button>
+            <p-button label="Filtros" styleClass="p-button-text" iconPos="right" icon="pi pi-filter"></p-button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-3/4 h-[62vh] 2xl:h-[67.8vh] overflow-y-auto flex justify-center border-t-2 rounded-xl">
+      <div class="w-full mb-20 relative">
+        <div class=" lg:grid grid-cols-3 gap-y-20">
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+          <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+
+        </div>
+      </div>
+    </div>
+    <div class="place-self-end right-[-2.5rem] xl:right-0 pr-24 top-[92%] lg:top-[88%] fixed">
+      <div class="w-10 h-10 lg:h-20 lg:w-20 p-5 rounded-full bg-corVerde absolute flex justify-center items-center top-[90%]">
+        <i class="pi pi-comments text-white" style=" font-size: 1.3rem;"></i>
+      </div>
+      <div class=" lg:h-4 lg:w-4 p-2 lg:p-4 left-6 lg:left-12 bg-orange-400 rounded-full absolute top-[90%]"></div>
+    </div>
+  </div>
+
+</div>
