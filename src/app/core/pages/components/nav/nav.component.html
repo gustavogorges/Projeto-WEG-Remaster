@@ -1,12 +1,12 @@
-<div [ngStyle]="{'width': largura + '%'}" style="z-index: 1000; border-right: 6px solid #E9EDF1;"
+<div [ngStyle]="{'width': largura + '%'}" style="z-index: 1001; border-right: 6px solid #E9EDF1;"
   class=" bg-[#185E77]  h-screen fixed duration-300">
   <div class="w-[20%] absolute top-5 right-5 " (click)="sideBar()">
     <img src="https://icon-library.com/images/x-icon-white/x-icon-white-0.jpg" alt="">
   </div>
 </div>
 
-<div class="w-full h-20 bg-corNav flex justify-center  drop-shadow-md z-0">
-  <div class="w-4/5 h-20 bg-corNav grid grid-cols-5 ">
+<div class="w-full h-20 bg-corNav flex justify-center  drop-shadow-md z-0 fixed" style="z-index: 1000;">
+  <div class="h-20 bg-corNav grid grid-cols-5 ">
     <div class="flex items-center justify-start px-5 text-sky-900">
       <i class="pi pi-list cursor-pointer" style="font-size: 2.2rem; position: fixed;" (click)="sideBar()">
       </i>
@@ -18,7 +18,7 @@
       </span>
     </div>
     <div class="ml-16 mr-30 flex items-center justify-between px-5 text-sky-900">
-      <div class=" mr-30 flex items-center justify-between px-5 text-sky-900 col-start-5 col-end-6">
+      <div class="invisible md:visible mr-30 flex items-center justify-between px-5 text-sky-900 col-start-5 col-end-6">
         <i class="pi pi-bell p-4 rounded-full hover:bg-sky-800 hover:text-corNav hover:shadow-2xl hover: cursor-pointer"
           style="font-size: 1.7rem;"></i>
         <i class="pi pi-moon p-4 rounded-full hover:bg-sky-800 hover:text-corNav hover:shadow-2xl hover: cursor-pointer"
