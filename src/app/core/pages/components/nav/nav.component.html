@@ -7,7 +7,13 @@
 <div class="w-full h-20 bg-corNav flex justify-center  drop-shadow-md z-0">
     <div class="w-4/5 h-20 bg-corNav grid grid-cols-5 ">
       <div class="flex items-center justify-start px-5 text-sky-900">
-        <i class="pi pi-list cursor-pointer" style="font-size: 2.2rem; z-index: 1001; position: fixed;" (click)="sideBar()" ></i>
+        <i
+         class="pi pi-list cursor-pointer"
+         style="font-size: 2.2rem; position: fixed;"
+         (click)="sideBar()" 
+         
+         >
+        </i>
       </div>
       <div
         class="flex items-center justify-start px-5 col-start-3 col-end-5 w-full h-full"
@@ -15,7 +21,11 @@
 
       <span class="p-input-icon-right w-3/4 h-2/3">
         <i class="pi pi-search" style="color: #185E77;"></i>
-        <input type="text" class="w-full h-full rounded-lg border-2 border-sky-800" pInputText />
+        <input
+         type="text"
+         class="w-full h-full rounded-lg border-2 border-sky-800"
+         pInputText 
+         />
      </span>
       
     </div>
@@ -26,4 +36,5 @@
         <i class="pi pi-moon p-4 rounded-full hover:bg-sky-800 hover:text-corNav hover: cursor-pointer" style="font-size: 1.7rem;"></i>
         <i class="pi pi-user p-4 rounded-full hover:bg-sky-800 hover:text-corNav hover: cursor-pointer" style="font-size: 1.7rem;"></i>
       </div>
+      
   </div>
