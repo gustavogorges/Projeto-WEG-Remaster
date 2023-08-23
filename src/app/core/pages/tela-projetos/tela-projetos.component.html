@@ -1,16 +1,16 @@
 <div [ngStyle]="{'content-shifted': isSidebarOpen}" class="transition-transform duration-300 w-full h-full bg-white flex flex-col items-center">
         <div class="flex justify-center pt-16 h-2/6 w-full">
             <div class="w-3/4">
-              <p class="text-5xl text-sky-900 font-bold pb-6 drop-shadow-xl">
+              <p class="text-3xl lg:text-5xl text-sky-900 font-bold pb-6 drop-shadow-xl">
                 Equipe Padrão
               </p>
-              <div class="mt-10 flex justify-between">
+              <div class="mt-10 lg:flex justify-between">
                 <button
                   pButton
                   type="button"
                   icon="pi pi-plus"
                   iconPos="left"
-                  class="w-1/3 h-14 text-xl max-w-xs"
+                  class="text-sm lg:w-1/3 h-14 lg:text-xl max-w-xs"
                   label="Adicionar Projeto"
                 ></button>
                 <div>
@@ -38,13 +38,13 @@
     </div>
   
   <div class="w-3/4 mt-20 mb-20">
-    <div class="grid grid-cols-3 gap-y-20">
-      <app-car class="flex justify-center"></app-car>
-      <app-car class="flex justify-center"></app-car>
-      <app-car class="flex justify-center"></app-car>
-      <app-car class="flex justify-center"></app-car>
-      <app-car class="flex justify-center"></app-car>
-      <app-car class="flex justify-center"></app-car>
+    <div class=" lg:grid grid-cols-3 gap-y-20">
+      <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+      <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+      <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+      <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+      <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
+      <app-car class="mb-5 lg:mb-0 flex justify-center"></app-car>
     </div>
   </div>
 </div>

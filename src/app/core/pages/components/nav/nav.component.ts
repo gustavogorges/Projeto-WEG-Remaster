@@ -24,7 +24,7 @@ export class NavComponent {
   sideBar() {
     if (this.largura == 0) {
       if(this.screenWidth >= 768){
-        this.largura = 16
+        this.largura = 17
       }
       else{
         this.largura = 50
