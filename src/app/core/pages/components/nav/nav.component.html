@@ -1,34 +1,31 @@
-<div [ngStyle]="{'width': largura + '%'}" style="z-index: 1000; border-right: 6px solid #E9EDF1;"  class=" bg-[#185E77]  h-screen fixed duration-300">
-      <div class="w-[20%] absolute top-5 right-5 " (click)="sideBar()">
-        <img src="https://icon-library.com/images/x-icon-white/x-icon-white-0.jpg" alt="">
-      </div>
+<div [ngStyle]="{'width': largura + '%'}" style="z-index: 1000; border-right: 6px solid #E9EDF1;"
+  class=" bg-[#185E77]  h-screen fixed duration-300">
+  <div class="w-[20%] absolute top-5 right-5 " (click)="sideBar()">
+    <img src="https://icon-library.com/images/x-icon-white/x-icon-white-0.jpg" alt="">
+  </div>
 </div>
 
 <div class="w-full h-20 bg-corNav flex justify-center  drop-shadow-md z-0">
-    <div class="w-4/5 h-20 bg-corNav grid grid-cols-5 ">
-      <div class="flex items-center justify-start px-5 text-sky-900">
-        <i class="pi pi-list cursor-pointer" style="font-size: 2.2rem; z-index: 1001; position: fixed;" (click)="sideBar()" ></i>
-      </div>
-      <div
-        class="flex items-center justify-start px-5 col-start-3 col-end-5 h-full"
-      >
-        <span class="p-input-icon-right w-full h-full">
-          <div class="flex items-center h-full">
-            <input
-              type="text"
-              pInputText
-              class="invisible lg:visible w-4/5 h-3/5 px-5 rounded-lg border-2 border-sky-900"
-            />
-            <!--<ion-icon name="search-outline" class="text-6xl"></ion-icon> -->
-          </div>
-        </span>
-      </div>
-      <div
-        class="ml-16 mr-30 flex items-center justify-between px-5 text-sky-900"
-      >
-        <i class="pi pi-bell p-4 rounded-full hover:bg-sky-800 hover:text-corNav hover:shadow-2xl hover: cursor-pointer" style="font-size: 1.7rem;"></i>
-        <i class="pi pi-moon p-4 rounded-full hover:bg-sky-800 hover:text-corNav hover:shadow-2xl hover: cursor-pointer" style="font-size: 1.7rem;"></i>
-        <i class="pi pi-user p-4 rounded-full hover:bg-sky-800 hover:text-corNav hover:shadow-2xl hover: cursor-pointer" style="font-size: 1.7rem;"></i>
+  <div class="w-4/5 h-20 bg-corNav grid grid-cols-5 ">
+    <div class="flex items-center justify-start px-5 text-sky-900">
+      <i class="pi pi-list cursor-pointer" style="font-size: 2.2rem; position: fixed;" (click)="sideBar()">
+      </i>
+    </div>
+    <div class="invisible lg:visible flex items-center justify-start px-5 col-start-3 col-end-5 h-full">
+      <span class="p-input-icon-right w-3/4 h-2/3">
+        <i class="pi pi-search" style="color: #185E77;"></i>
+        <input type="text" class="w-full h-full px-4 rounded-lg border-2 border-sky-800" pInputText />
+      </span>
+    </div>
+    <div class="ml-16 mr-30 flex items-center justify-between px-5 text-sky-900">
+      <div class=" mr-30 flex items-center justify-between px-5 text-sky-900 col-start-5 col-end-6">
+        <i class="pi pi-bell p-4 rounded-full hover:bg-sky-800 hover:text-corNav hover:shadow-2xl hover: cursor-pointer"
+          style="font-size: 1.7rem;"></i>
+        <i class="pi pi-moon p-4 rounded-full hover:bg-sky-800 hover:text-corNav hover:shadow-2xl hover: cursor-pointer"
+          style="font-size: 1.7rem;"></i>
+        <i class="pi pi-user p-4 rounded-full hover:bg-sky-800 hover:text-corNav hover:shadow-2xl hover: cursor-pointer"
+          style="font-size: 1.7rem;"></i>
       </div>
     </div>
   </div>
+</div>
