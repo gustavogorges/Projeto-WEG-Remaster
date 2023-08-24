@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
+import { ModalService } from 'src/assets/ModalService/ModalService';
 
 @Component({
   selector: 'app-nav',
@@ -7,7 +8,7 @@ import { Component, ElementRef, HostListener } from '@angular/core';
 })
 export class NavComponent {
 
-  constructor(private _elementRef: ElementRef) {
+  constructor(private _elementRef: ElementRef, private modalService: ModalService) {
   }
 
   @HostListener('document:click', ['$event'])
@@ -31,9 +32,18 @@ export class NavComponent {
       }
     } else {
       this.largura = 0
+      this.modalService.closeModal()
+
     }
   }
-
+  
+  modalOpenClose(){
+    if(this.modalService.getModalState()){
+      this.modalService.closeModal()
+    }else{
+      this.modalService.openModal()
+    }
+  }
 
   screenWidth: number = 0;
 
@@ -46,6 +56,7 @@ export class NavComponent {
   @HostListener('window:resize', ['$event'])
   getScreenSize() {
     this.largura = 0
+    this.modalService.closeModal()
     this.screenWidth = window.innerWidth;
   }
 }

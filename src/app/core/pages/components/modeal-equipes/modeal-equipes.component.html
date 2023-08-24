@@ -1,1 +1,37 @@
-<p>modeal-equipes works!</p>
+<div [ngClass]="modalOn ? 'visible': 'invisible'" class="absolute left-[40%] top-[25%] bg-slate-300">
+    <div>
+        <p>exemplo.email@gmail.com</p>
+    </div>
+    
+    <hr>
+
+    <div>
+        <span>
+            <div>
+                <div>
+                    <i class="pi pi-users hover:text-green-600"></i>
+                </div>
+                <div>
+                    <p>Equipe Weg</p>
+                </div>
+            </div>
+            <p>4 membros</p>
+        </span>
+    </div>
+
+    <div>
+        <button></button>
+    </div>
+</div>
+
+<div class="flex items-center h-[30%]">
+    <div class="flex items-center gap-2 cursor-pointer">
+        <div>
+            <p>Equipes</p>
+        </div>
+        <div class="cursor-pointer flex flex-col pt-3">
+            <i class="pi pi-caret-left rotate-90"></i>
+            <i class="pi pi-caret-right rotate-90"></i>
+        </div>
+    </div>
+</div>
