@@ -1,7 +1,7 @@
 <div [ngStyle]="{'width': largura + '%'}" style="z-index: 1001; border-right: 6px solid #E9EDF1;"
-  class=" bg-[#185E77]  h-screen fixed duration-300">
-  <div class="w-[20%] absolute top-5 right-5 " (click)="sideBar()">
-    <i class="pi pi-list cursor-pointer"[ngClass]="largura ? 'visible' : 'invisible'" style="font-size: 2.2rem; position: fixed;" (click)="sideBar()"></i>
+  class=" bg-[#185E77]  h-screen fixed duration-300 overflow-hidden">
+  <div class="w-[20%] p-8 overflow-hidden">
+    <i class="pi pi-times cursor-pointer text-white"[ngClass]="largura ? 'visible' : 'invisible'" style="font-size: 2.2rem; position: fixed;" (click)="sideBar()"></i>
   </div>
   <div class="overflow-hidden text-[3rem] flex justify-center text-white h-full font-semibold" [ngClass]="largura ? 'vible' : 'invisible'">
     <app-modeal-equipes (click)="modalOpenClose()"></app-modeal-equipes>
