@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { ModalService } from 'src/assets/ModalService/ModalService';
 
 @Component({
@@ -7,20 +8,20 @@ import { ModalService } from 'src/assets/ModalService/ModalService';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
+  private modalSubscription !: Subscription;
+  constructor(private _elementRef: ElementRef, private modalService: ModalService) {}
 
-  constructor(private _elementRef: ElementRef, private modalService: ModalService) {
-  }
-
+  modalOn = false
   @HostListener('document:click', ['$event'])
 
   clickOutside(event: Event) {
     if (!this._elementRef.nativeElement.contains(event.target)) {
       this.largura = 0
+      this.modalService.closeModal()
     }
   }
 
   largura: number = 0 
-
 
   sideBar() {
     if (this.largura == 0) {
@@ -30,27 +31,21 @@ export class NavComponent {
       else{
         this.largura = 80
       }
-    } else {
-      this.largura = 0
-      this.modalService.closeModal()
-
     }
   }
-  
-  modalOpenClose(){
-    if(this.modalService.getModalState()){
-      this.modalService.closeModal()
-    }else{
-      this.modalService.openModal()
-    }
+
+  closeSideBar(){
+    this.largura = 0
+    this.modalService.closeModal()
   }
 
   screenWidth: number = 0;
 
- 
-
   ngOnInit() {
     this.getScreenSize()
+    this.modalSubscription = this.modalService.getModalState().subscribe(state => {
+      this.modalOn = state;
+    });
   }
 
   @HostListener('window:resize', ['$event'])

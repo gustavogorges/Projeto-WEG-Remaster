@@ -1,32 +1,364 @@
-<div [ngClass]="modalOn ? 'visible': 'invisible'" class="absolute left-[40%] top-[25%] bg-slate-300">
-    <div>
-        <p>exemplo.email@gmail.com</p>
+<div [ngClass]="modalOn ? 'opacity-100': 'opacity-0'" class="duration-300 absolute left-[68%] w-[30rem] h-[45%] top-[12%] bg-white shadow-2xl rounded-md overflow-hidden">
+    <div class="flex w-full h-[10%] items-center pr-3">
+        <p class="w-full flex justify-center text-black text-lg">exemplo.email@gmail.com</p>
+        <i class="pi pi-times text-black flex justify-end cursor-pointer" (click)="closeModal()"></i>
     </div>
     
     <hr>
 
-    <div>
-        <span>
-            <div>
-                <div>
-                    <i class="pi pi-users hover:text-green-600"></i>
+    <div class="h-[70%] overflow-auto">
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
                 </div>
-                <div>
-                    <p>Equipe Weg</p>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
                 </div>
             </div>
-            <p>4 membros</p>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
         </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-green-600" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+        <span class="flex items-end p-2 cursor-pointer">
+            <div class="flex items-center gap-5 w-full">
+                <div class="">
+                    <i [ngClass]="modalOn ? 'visible duration-200':'invisible'" class="pi pi-users text-slate-500 hover:text-[#4C956C]" style="font-size: 50px;"></i>
+                </div>
+                <div class="w-full">
+                    <p class="text-black text-[1rem]">Equipe Weg</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-slate-500 text-sm flex justify-end">4 membros</p>
+            </div>
+        </span>
+
+
     </div>
 
-    <div>
-        <button></button>
+    <div class="w-full h-[20%]">
+        <div class="h-full flex justify-center p-6 duration-300 hover:p-5 items-center">
+            <button class="w-full h-full rounded-lg  bg-[#4C956C] shadow-2xl flex items-center justify-center gap-2">
+                <i class="pi pi-plus text-white"></i>
+                <p class="text-white text-xl">Criar uma Equipe</p>
+            </button>
+        </div>
     </div>
 </div>
 
-<div class="flex items-center h-[30%]">
+<div class="flex items-center h-[30%] text-[2.5rem] justify-center text-white font-semibold" >
     <div class="flex items-center gap-2 cursor-pointer">
-        <div>
+        <div (click)="modalOpen()">
             <p>Equipes</p>
         </div>
         <div class="cursor-pointer flex flex-col pt-3">

@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class ModalService {
-  private modalState = new BehaviorSubject<boolean>(false);
+  private modalState = new BehaviorSubject<boolean>(true);
 
   getModalState() {
     return this.modalState.asObservable();

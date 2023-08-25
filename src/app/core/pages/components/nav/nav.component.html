@@ -1,18 +1,15 @@
 <div [ngStyle]="{'width': largura + '%'}" style="z-index: 1001; border-right: 6px solid #E9EDF1;"
-  class=" bg-[#185E77]  h-screen fixed duration-300 overflow-hidden">
-  <div class="w-[20%] p-8 overflow-hidden">
-    <i class="pi pi-times cursor-pointer text-white"[ngClass]="largura ? 'visible' : 'invisible'" style="font-size: 2.2rem; position: fixed;" (click)="sideBar()"></i>
+  class=" bg-[#185E77]  h-screen fixed duration-300">
+  <div class="flex justify-end p-8" *ngIf="largura" >
+    <i class="pi pi-times cursor-pointer text-sm  text-white"[ngClass]="largura ? 'visible' : 'invisible'" style="font-size: 2.2rem; position: fixed;"  (click)="closeSideBar()"></i>
   </div>
-  <div class="overflow-hidden text-[3rem] flex justify-center text-white h-full font-semibold" [ngClass]="largura ? 'vible' : 'invisible'">
-    <app-modeal-equipes (click)="modalOpenClose()"></app-modeal-equipes>
-  </div>
+  <app-modeal-equipes class=" text-[3rem] flex justify-center text-white font-semibold" [ngClass]="largura ? 'vible' : 'invisible'"></app-modeal-equipes>
 </div>
 
 <div class="w-full h-20 bg-corNav flex justify-center  drop-shadow-md z-0 fixed" style="z-index: 1000;">
   <div class="h-20 bg-corNav grid grid-cols-5 ">
-    <div class="flex items-center justify-start px-5 text-sky-900">
-      <i class="pi pi-list cursor-pointer" style="font-size: 2.2rem; position: fixed;" (click)="sideBar()">
-      </i>
+    <div class="flex items-center justify-start px-8 text-sky-900">
+      <i  class="pi pi-list cursor-pointer" style="font-size: 2.2rem;" (click)="sideBar()"></i>
     </div>
     <div class="invisible lg:visible flex items-center justify-start col-start-3 col-end-5 h-full">
       <span class="p-input-icon-right w-3/4 h-2/3">

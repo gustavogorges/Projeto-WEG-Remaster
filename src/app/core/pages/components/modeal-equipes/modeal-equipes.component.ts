@@ -1,4 +1,4 @@
-import { state } from '@angular/animations';
+
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ModalService } from 'src/assets/ModalService/ModalService';
@@ -20,4 +20,21 @@ export class ModealEquipesComponent {
       this.modalOn = state;
     });
   }
+
+  closeModal(){
+    this.modalService.closeModal()
+    this.modalSubscription = this.modalService.getModalState().subscribe(state => {
+      this.modalOn = state;
+    });
+    this.modalOn = false
+  }
+
+  modalOpen(){
+    if(this.modalOn){
+      this.modalService.closeModal()
+    }else{
+      this.modalService.openModal()
+    }
+  }
+
 }
